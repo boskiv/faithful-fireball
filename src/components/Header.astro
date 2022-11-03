@@ -1,16 +1,19 @@
 ---
 import Navigation from "./Navigation.astro";
 import Hamburger from '../components/Hamburger.astro';
+import ThemeIcon from './ThemeIcon.astro';
 const links = [
   { url: "/", text: "Home" },
   { url: "/about", text: "About" },
   { url: "/blog", text: "Blog" },
+  { url: "/tags", text: "Tags" },
 ];
 ---
 
 <header>
   <nav>
     <Hamburger />
+    <ThemeIcon />
     <Navigation links={links} />
   </nav>
 </header>
