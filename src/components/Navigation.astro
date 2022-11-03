@@ -1,0 +1,6 @@
+---
+const {links} = Astro.props;
+---
+<div class="nav-links">
+    {links.map((link: any) => <a href={link.url}>{link.text}</a>)}
+</div>

@@ -1,0 +1,16 @@
+---
+import Navigation from "./Navigation.astro";
+import Hamburger from '../components/Hamburger.astro';
+const links = [
+  { url: "/", text: "Home" },
+  { url: "/about", text: "About" },
+  { url: "/blog", text: "Blog" },
+];
+---
+
+<header>
+  <nav>
+    <Hamburger />
+    <Navigation links={links} />
+  </nav>
+</header>
